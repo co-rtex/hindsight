@@ -1,6 +1,6 @@
-# QuantLab
+# Hindsight
 
-QuantLab is a self-hosted platform for **reproducible quantitative research on equities**.
+Hindsight is a self-hosted platform for **reproducible quantitative research on equities**.
 You version historical market data, define a strategy, run an event-driven backtest as a
 background job, and get its performance, risk, statistical validation and an integrity
 report. Every result can be reproduced exactly from its manifest.
@@ -9,6 +9,9 @@ report. Every result can be reproduced exactly from its manifest.
 was verified from a fresh clone, with the evidence in
 [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md). Public deployment, licensed market
 data and a hosted LLM are separate future work.
+
+The code keeps its original internal name: the `quantlab` Python package, the `QUANTLAB_*`
+environment variables and the `quantlab` Docker Compose project.
 
 It is research infrastructure, not a trading bot. Results describe the past under stated
 assumptions and are never investment advice. **All bundled data is synthetic**, and is
@@ -28,7 +31,7 @@ A backtest is easy to write and easy to get wrong. The common failures are quiet
   many variants reported as if it were the only one.
 * **Results nobody can regenerate.** The data, parameters or code changed silently.
 
-QuantLab treats each of these as an engineering requirement with a test, rather than a
+Hindsight treats each of these as an engineering requirement with a test, rather than a
 convention.
 
 ## What it does
